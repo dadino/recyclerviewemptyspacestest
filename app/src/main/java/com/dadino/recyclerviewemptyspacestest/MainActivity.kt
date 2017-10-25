@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 		list.adapter = TestAdapter()
 		list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-		findViewById<View>(R.id.root).setOnClickListener { Toast.makeText(this, "Root clicked", Toast.LENGTH_SHORT).show() }
+		list.setOnClickListener { Toast.makeText(this, "List clicked", Toast.LENGTH_SHORT).show() }
 	}
 }
 
